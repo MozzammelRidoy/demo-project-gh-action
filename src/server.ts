@@ -9,7 +9,7 @@ async function main() {
   try {
     // starting the server
     server = app.listen(config.port, () => {
-      console.log(`🚀 Server running on port ${config.port}`)
+      console.log(`🚀 Server running on port : ${config.port}`)
     })
   } catch (err) {
     console.error('❌ Failed to start server:', err)
