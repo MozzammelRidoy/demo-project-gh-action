@@ -22,3 +22,20 @@ jobs:
 
       - name: Run the tests
         run: npm run test
+
+  build-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: install node-js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
+      - name: Coping the codes
+        uses: actions/checkout@v6
+
+      - name: install dependencies
+        run: npm install
+
+      - name: Build the codes
+        run: npm run build
