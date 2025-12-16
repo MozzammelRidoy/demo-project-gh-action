@@ -1,6 +1,9 @@
 name: Ready the code and deploy
 
 on:
+  pull_request:
+    types: [opened, reopened]
+    
   push:
     branches:
       - main
